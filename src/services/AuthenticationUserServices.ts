@@ -1,5 +1,7 @@
 import axios from "axios";
-import { response } from "express";
+import prismaClient from "../prisma/index";
+import { sign } from "jsonwebtoken"; //para criar o token
+
 /*
  * Receber o code(string)
  * Recuperar o access_token no github
@@ -50,9 +52,43 @@ class AuthenticateUserService {
       }
     );
 
+    const { login, id, avatar_url, name } = response.data;
+
+    let user = await prismaClient.user.findFirst({
+      where: {
+        github_id: id,
+      },
+    });
+    //se o usuario nao existir
+    if (!user) {
+      user = await prismaClient.user.create({
+        data: {
+          github_id: id,
+          login,
+          avatar_url,
+          name,
+        },
+      });
+    }
+    // dois parametros. infos do user e o secret
+    const token = sign(
+      {
+        user: {
+          name: user.name,
+          avatar_url: user.avatar_url,
+          id: user.id,
+        },
+      },
+      process.env.JWT_SECRET,
+      {
+        subject: user.id,
+        expiresIn: "1d", //token expira em 1 dia
+      }
+    );
+
     //no axios toda informaçao q eu estou usando é enviada por esse data
     /* ele esta sendo enviado via destructuring  */
-    return response.data;
+    return { token, user };
   }
 }
 
