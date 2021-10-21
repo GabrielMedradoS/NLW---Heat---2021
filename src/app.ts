@@ -26,7 +26,7 @@ app.use(express.json());
 app.use(router);
 
 // "/" qur dizer a home da page
-app.get("/", (request, response) => {
+app.get("/github", (request, response) => {
   response.redirect(
     `https://github.com/login/oauth/authorize?client_id=${process.env.GITHUB_CLIENT_ID}`
   );
