@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction, request } from "express";
+import { Request, Response, NextFunction } from "express";
 import { verify } from "jsonwebtoken";
 /* fazendo a autenticaçao, se meu usuario nao estiver autenticado/ token invalido
 eu quero que minha aplicaçao retorne um erro, mas se estiver autenticado eu quero passar a frente
@@ -9,7 +9,7 @@ interface IPayload {
 }
 
 export function ensureAuthenticated(
-  Request: Request,
+  request: Request,
   response: Response,
   next: NextFunction
 ) {
