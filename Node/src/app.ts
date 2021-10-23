@@ -10,8 +10,8 @@ import { Server } from "socket.io";
 const app = express();
 app.use(cors());
 
-const servetHttp = http.createServer(app);
-const io = new Server(servetHttp, {
+const serverHttp = http.createServer(app);
+const io = new Server(serverHttp, {
   cors: {
     origin: "*", //qualquer origin
   },
@@ -38,4 +38,4 @@ app.get("/signin/callback", (request, response) => {
   return response.json(code);
 });
 
-export { servetHttp, io };
+export { serverHttp, io };

@@ -1,3 +1,3 @@
-import { servetHttp } from "./app";
+import { serverHttp } from "./app";
 
-servetHttp.listen(4000, () => console.log(`SERVER RODANDO`));
+serverHttp.listen(4000, () => console.log(`SERVER RODANDO`));

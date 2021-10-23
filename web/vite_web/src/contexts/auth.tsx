@@ -45,6 +45,8 @@ export function AuthProvider(props: AuthProvider) {
 
     localStorage.setItem("@dowhile:token", token);
 
+    api.defaults.headers.common.authorization = `Bearer ${token}`;
+
     setUser(user);
   }
 
@@ -53,6 +55,7 @@ export function AuthProvider(props: AuthProvider) {
     localStorage.removeItem("@dowhile:token");
   }
 
+  //salva os dados automaticamente, msm apertando f5 nao desloga
   useEffect(() => {
     const token = localStorage.getItem("@dowhile:token");
 
@@ -60,7 +63,8 @@ export function AuthProvider(props: AuthProvider) {
       //toda a linha va automaticamente com o token de autorizaçao
       api.defaults.headers.common.authorization = `Bearer ${token}`;
 
-      api.get<User>("profile").then((response) => {
+      api.get<User>("/profile").then((response) => {
+        console.log(response.data);
         setUser(response.data);
       });
     }
@@ -71,9 +75,9 @@ export function AuthProvider(props: AuthProvider) {
     const hasGithubCode = url.includes("?code=");
 
     if (hasGithubCode) {
-      const [urlWithouCode, githubCode] = url.split("?code=");
+      const [urlWithoutCode, githubCode] = url.split("?code=");
 
-      window.history.pushState({}, "", urlWithouCode);
+      window.history.pushState({}, "", urlWithoutCode);
 
       signIn(githubCode);
     }
