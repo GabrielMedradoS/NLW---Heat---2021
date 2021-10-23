@@ -63,8 +63,7 @@ export function AuthProvider(props: AuthProvider) {
       //toda a linha va automaticamente com o token de autorizaçao
       api.defaults.headers.common.authorization = `Bearer ${token}`;
 
-      api.get<User>("/profile").then((response) => {
-        console.log(response.data);
+      api.get<User>("profile").then((response) => {
         setUser(response.data);
       });
     }

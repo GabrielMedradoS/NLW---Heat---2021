@@ -4,8 +4,8 @@ import { AuthContext } from "../../contexts/auth";
 import { useContext } from "react";
 
 export function LoginBox() {
-  const { signInUrl, user } = useContext(AuthContext);
-  console.log(user);
+  const { signInUrl } = useContext(AuthContext);
+
   return (
     <div className={styles.LoginBoxWrapper}>
       <strong>Entre e compartilhe sua mensagem</strong>

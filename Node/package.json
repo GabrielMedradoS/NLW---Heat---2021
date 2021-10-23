@@ -6,8 +6,6 @@
   "scripts": {
     "dev": "ts-node-dev --exit-child src/server.ts"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@prisma/client": "^3.3.0",
     "axios": "^0.23.0",

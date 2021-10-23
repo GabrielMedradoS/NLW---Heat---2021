@@ -39,7 +39,7 @@ class AuthenticateUserService {
           code,
         },
         headers: {
-          Accept: "aplication/json",
+          Accept: "application/json",
         },
       });
 

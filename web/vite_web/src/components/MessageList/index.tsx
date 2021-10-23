@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-/* import { io } from "socket.io-client"; */
+import { io } from "socket.io-client";
 import { api } from "../../services/api";
 
 import styles from "./styles.module.scss";
@@ -13,19 +13,19 @@ type Message = {
   };
 };
 
-/* const messagesQueue: Message[] = [];
+const messagesQueue: Message[] = [];
 
-const socket = io("https://localhost:4000");
+const socket = io("http://localhost:4000");
 
 socket.on("new_message", (newMessage: Message) => {
   messagesQueue.push(newMessage);
 });
- */
+
 export function MessageList() {
   //ira armazenar uma lista de mensagens, ou seja, um array de mensagens
   const [messages, setMessages] = useState<Message[]>([]);
 
-  /*   useEffect(() => {
+  useEffect(() => {
     setInterval(() => {
       if (messagesQueue.length > 0) {
         setMessages((prevState) =>
@@ -36,7 +36,7 @@ export function MessageList() {
       }
     }, 3000);
   }, []);
- */
+
   useEffect(() => {
     api.get<Message[]>("messages/last3").then((response) => {
       setMessages(response.data);
@@ -102,9 +102,9 @@ export function MessageList() {
       </svg>
 
       <ul className={styles.messageList}>
-        {messages.map((message) => {
+        {messages.map((message, index) => {
           return (
-            <li key={message.id} className={styles.message}>
+            <li key={index} className={styles.message}>
               <p className={styles.messageContent}>{message.text}</p>
               <div className={styles.messageUser}>
                 <div className={styles.userImage}>
