@@ -1,9 +1,11 @@
 ## NLW---Heat---2021
 
-  <img src="" alt="" width="100%">
+  <img src=".github/NLW 2021.png" alt="" width="100%">
   
 ### 💻 Projeto
 preparação para o DoWhile 2021
+
+Projeto contendo a versao Web e Mobile
 
 ### 🛠 Tecnologias
 
