@@ -11,11 +11,12 @@ export function Header() {
     <View style={styles.container}>
       <LogoSvg />
 
-      <UserPhotos imageUri="https://github.com/GabrielMedradoS.png" />
-
-      <TouchableOpacity>
-        <Text style={styles.logoutText}> Sair </Text>
-      </TouchableOpacity>
+      <View style={styles.logoutButton}>
+        <TouchableOpacity>
+          <Text style={styles.logoutText}> Sair </Text>
+        </TouchableOpacity>
+        <UserPhotos imageUri="https://github.com/GabrielMedradoS.png" />
+      </View>
     </View>
   );
 }

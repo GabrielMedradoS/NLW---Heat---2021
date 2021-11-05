@@ -8,7 +8,7 @@ import AppLoading from "expo-app-loading";
 import { StatusBar } from "expo-status-bar";
 
 import { Home } from "./src/screens/Home";
-import { View } from "react-native";
+import { View, StyleSheet } from "react-native";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -20,10 +20,16 @@ export default function App() {
     return <AppLoading />;
   } else if (fontsLoaded) {
     return (
-      <View>
+      <View style={styles.container}>
         <StatusBar style="light" />
         <Home />
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});

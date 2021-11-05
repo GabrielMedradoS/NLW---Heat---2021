@@ -6,5 +6,8 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  avatar: {},
+  avatar: {
+    borderWidth: 2,
+    borderColor: COLORS.BLACK_SECONDARY,
+  },
 });

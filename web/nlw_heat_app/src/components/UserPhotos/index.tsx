@@ -30,6 +30,8 @@ export function UserPhotos({ imageUri, sizes = "NORMAL" }: Props) {
   return (
     <LinearGradient
       colors={[COLORS.PINK, COLORS.YELLOW]}
+      start={{ x: 0, y: 0.8 }}
+      end={{ x: 0.9, y: 1 }}
       style={[
         styles.container,
         {
