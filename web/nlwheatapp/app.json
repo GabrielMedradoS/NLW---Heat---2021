@@ -1,8 +1,9 @@
 {
   "expo": {
-    "name": "nlw_heat_app",
-    "slug": "nlw_heat_app",
+    "name": "nlwheatapp",
+    "slug": "nlwheatapp",
     "version": "1.0.0",
+    "scheme": "nlwheatapp",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
