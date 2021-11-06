@@ -9,6 +9,9 @@
 preparação para o DoWhile 2021
 Projeto contendo a versao Web utilizando o Vite e uma versao Mobile ultilizando o React-native
 
+a app consiste em fazer uma autenticaçao com o seu usuario do github, enviar mensagens 
+e ve-lâs sendo exibida em RealTime
+
 ### 🛠 Tecnologias
 
 <div>
