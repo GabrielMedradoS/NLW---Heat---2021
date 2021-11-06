@@ -75,7 +75,11 @@ function AuthProvider({ children }: authProvideProps) {
     }
   }
 
-  async function signOut() {}
+  async function signOut() {
+    setUser(null);
+    await AsyncStorage.removeItem(USER_STORAGE);
+    await AsyncStorage.removeItem(TOKEN_STORAGE);
+  }
 
   useEffect(() => {
     //o usuario permace logado na app
