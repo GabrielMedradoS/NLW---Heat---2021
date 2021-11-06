@@ -7,8 +7,7 @@
 
 ### 💻 Projeto
 preparação para o DoWhile 2021
-
-Projeto contendo a versao Web e Mobile
+Projeto contendo a versao Web utilizando o Vite e uma versao Mobile ultilizando o React-native
 
 ### 🛠 Tecnologias
 
