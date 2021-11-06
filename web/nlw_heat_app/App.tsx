@@ -7,6 +7,7 @@ import {
 import AppLoading from "expo-app-loading";
 import { StatusBar } from "expo-status-bar";
 
+import { AuthProvider } from "./src/hooks/auth";
 import { Home } from "./src/screens/Home";
 import { View, StyleSheet } from "react-native";
 
@@ -18,14 +19,15 @@ export default function App() {
 
   if (!fontsLoaded) {
     return <AppLoading />;
-  } else if (fontsLoaded) {
-    return (
+  }
+  return (
+    <AuthProvider>
       <View style={styles.container}>
-        <StatusBar style="light" />
+        <StatusBar style="light" translucent backgroundColor="transparent" />
         <Home />
       </View>
-    );
-  }
+    </AuthProvider>
+  );
 }
 
 const styles = StyleSheet.create({
