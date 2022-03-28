@@ -3,13 +3,13 @@
 </h1>
 
 <p align="center">
-    <img alt="Platform" src="https://img.shields.io/static/v1?label=Platform&message=Mobile/PC&color=blue&labelColor=white">
+    <img alt="Platform" src="https://img.shields.io/static/v1?label=Platform&message=Mobile/PC&color=FF7A29&labelColor=white">
     <a href="">
-        <img src="https://img.shields.io/badge/DoWhile-NLW Heat-blue?&labelColor=white"></img>
+        <img src="https://img.shields.io/badge/DoWhile-NLW Heat-FF7A29?&labelColor=white"></img>
     </a>
-    <img alt="Repository size" src="https://img.shields.io/github/repo-size/GabrielMedradoS/NLW---Heat---2021?color=blue&labelColor=white">
+    <img alt="Repository size" src="https://img.shields.io/github/repo-size/GabrielMedradoS/NLW---Heat---2021?color=FF7A29&labelColor=white">
     <a href="https://github.com/GabrielMedradoS/NLW---Heat---2021/blob/master/License">
-        <img alt="License" src="https://img.shields.io/static/v1?label=License&message=MIT&color=blue&labelColor=white">
+        <img alt="License" src="https://img.shields.io/static/v1?label=License&message=MIT&color=FF7A29&labelColor=white">
     </a>
 </p>
 
