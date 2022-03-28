@@ -1,9 +1,7 @@
 ## NLW---Heat---2021
-
-<div>
-  <img src=".github/NLW 2021.png" alt="" width="80%"> 
-  <img src=".github/nlw Mobile.png" alt="" width="180px">
-</div>
+<h1 align="center">
+    <img src="./web-mobile/nlwheatapp/assets/icon.png" width="20%" heigh="0" alt="nlw-heat">
+</h1>
 <p align="center">
     <a href="#projeto-">Projeto</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#tecnologias-">Tecnologias</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -11,14 +9,50 @@
     <a href="#licença-%EF%B8%8F">Licença</a>
 </p>
 
-## 💻 Projeto
+### Layout 🚧
+
+<div>
+  <img src=".github/NLW 2021.png" alt="" width="80%"> 
+  <img src=".github/nlw Mobile.png" alt="" width="180px">
+</div>
+
+## Projeto 💻
 preparação para o DoWhile 2021
 Projeto contendo a versao Web utilizando o Vite e uma versao Mobile ultilizando o React-native
 
 a app consiste em fazer uma autenticaçao com o seu usuario do github, enviar mensagens 
 e ve-lâs sendo exibida em RealTime
 
-## 🛠 Tecnologias
+## Rodar o projeto 🚴🏻‍♂️
+
+#### On your machine:
+<details>
+    <summary>Dependencies</summary>
+
+```json
+  "dependencies": {
+
+  }
+```
+</details>
+
+```bash
+# Clone the repository
+$ git clone https://github.com/GabrielMedradoS/NLW---Heat---2021.git
+
+# Access the project folder at the command prompt
+$ cd NLW---Heat---2021
+
+# Install the dependencies
+$ npm install
+
+# Run the script "start"
+$ npm run dev
+
+# The project will start at the door: 3000 - access http://localhost:3000
+```
+
+## Tecnologias 🛠
 
 <div>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5"  height="30" width="40"/>
@@ -28,6 +62,9 @@ e ve-lâs sendo exibida em RealTime
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
   alt="typescript" height="30" width="40"/>
 </div>
+
+## Licença ⚖️
+This project is under the MIT license. See the archive [LICENSE]() for more details.
 
 ## Autor ✍🏾
 
