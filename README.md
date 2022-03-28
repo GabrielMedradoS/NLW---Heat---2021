@@ -11,10 +11,12 @@
 
 ### Layout 🚧
 
-<div>
-  <img src=".github/NLW 2021.png" alt="" width="80%"> 
+#### Desktop Screenshot
+  <img src=".github/NLW 2021.png" alt="" width="80%">
+  
+#### Mobile Screenshot
   <img src=".github/nlw Mobile.png" alt="" width="180px">
-</div>
+
 
 ## Projeto 💻
 preparação para o DoWhile 2021
@@ -26,13 +28,65 @@ e ve-lâs sendo exibida em RealTime
 ## Rodar o projeto 🚴🏻‍♂️
 
 #### On your machine:
+##### Backend
 <details>
     <summary>Dependencies</summary>
 
 ```json
   "dependencies": {
+    "@prisma/client": "^3.3.0",
+    "axios": "^0.23.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "socket.io": "^4.3.1"
+  },
+```
+</details>
 
-  }
+##### Fronted
+<details>
+    <summary>Dependencies</summary>
+
+```json
+  "dependencies": {
+    "axios": "^0.23.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-icons": "^4.3.1",
+    "sass": "^1.43.2",
+    "socket.io-client": "^4.3.2"
+  },
+```
+</details>
+
+##### Mobile
+<details>
+    <summary>Dependencies</summary>
+
+```json
+  "dependencies": {
+    "@expo-google-fonts/roboto": "^0.2.0",
+    "@react-native-async-storage/async-storage": "~1.15.0",
+    "axios": "^0.24.0",
+    "expo": "~43.0.0",
+    "expo-app-loading": "~1.2.1",
+    "expo-auth-session": "~3.4.2",
+    "expo-font": "~10.0.3",
+    "expo-linear-gradient": "~10.0.3",
+    "expo-random": "~12.0.1",
+    "expo-status-bar": "~1.1.0",
+    "moti": "^0.16.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native": "0.64.2",
+    "react-native-iphone-x-helper": "^1.3.1",
+    "react-native-reanimated": "~2.2.0",
+    "react-native-svg": "12.1.1",
+    "react-native-web": "0.17.1",
+    "socket.io-client": "^4.3.2"
+  },
 ```
 </details>
 
