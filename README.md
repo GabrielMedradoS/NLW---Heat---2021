@@ -1,6 +1,5 @@
 ## NLW---Heat---2021
 <h1 align="center">
-    <img src="./web-mobile/nlwheatapp/assets/icon.png" width="20%" heigh="0" alt="nlw-heat">
 </h1>
 <p align="center">
     <a href="#projeto-">Projeto</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
