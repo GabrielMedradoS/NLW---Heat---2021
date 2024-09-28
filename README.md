@@ -23,7 +23,7 @@
 ### Layout 🚧
 
 #### Desktop Screenshot
-  <img src=".github/NLW 2021.png" alt="" width="80%">
+  <img src=".github/github image.png" alt="" width="80%">
   
 #### Mobile Screenshot
   <img src=".github/nlw Mobile.png" alt="" width="180px">
